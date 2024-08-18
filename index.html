@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rute fuels</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- bootstrap connector -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- js script for form submission -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Nav bar -->
+    <header id="home">
+        <div class="nav-container">
+            <a href="#home"><img src="images/Preview.png" alt="Company Logo" class="logo"></a>
+            <nav>
+                <div class="menu-icon" id="menu-icon">
+                    &#9776; <!-- This is the hamburger icon -->
+                </div>
+                <ul id="nav-items">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- showcase section -->
+    <section id="showcase">
+        <div class="container">
+            <h1>Reliable Fuel Supply Solutions</h1>
+            <p>Your trusted partner for fuel supply and logistics.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-container">
+        <div class="about-grid">
+            <div class="about-image-slider">
+                <div class="slide">
+                    <img src="images/Preview.png" alt="Image 1">
+                </div>
+                <div class="slide">
+                    <img src="images/diesel.jpg" alt="Image 2">
+                </div>
+                <div class="slide">
+                    <img src="images/crude oil.jpg" alt="Image 3">
+                </div>
+                <div class="slide">
+                    <img src="images/cylinders.jpg" alt="Image 4">
+                </div>
+            </div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                    We are a dedicated team providing exceptional fuel delivery services,
+                    comprehensive fuel management solutions, and emergency fuel supply
+                    services. Our consultation services are tailored to meet the specific
+                    needs of our clients, ensuring efficient and reliable operations.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section -->
+    <section id="services" class="service-container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-card-inner">
+                    <div class="service-card-front">
+                        <img src="images/delivery.jpg" alt="Fuel Delivery">
+                        <h3>Fuel Delivery</h3>
+                    </div>
+                    <div class="service-card-back">
+                        <h3>Fuel Delivery</h3>
+                        <p>Reliable fuel delivery services ensuring you always have the fuel you need.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-card-inner">
+                    <div class="service-card-front">
+                        <img src="images/management.jpg" alt="Fuel Management">
+                        <h3>Fuel Management</h3>
+                    </div>
+                    <div class="service-card-back">
+                        <h3>Fuel Management</h3>
+                        <p>Comprehensive fuel management solutions to optimize your fuel usage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-card-inner">
+                    <div class="service-card-front">
+                        <img src="images/emergency.png" alt="Emergency Fuel Supply">
+                        <h3>Emergency Fuel Supply</h3>
+                    </div>
+                    <div class="service-card-back">
+                        <h3>Emergency Fuel Supply</h3>
+                        <p>Emergency fuel supply services available 24/7 to meet your urgent needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="service-card-inner">
+                    <div class="service-card-front">
+                        <img src="images/consulting.jpg" alt="Consultation Services">
+                        <h3>Consultation Services</h3>
+                    </div>
+                    <div class="service-card-back">
+                        <h3>Consultation Services</h3>
+                        <p>Expert consultation services to help you with fuel management and strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <img src="images/phone_icon.png" alt="phone icon"> 012 345 6789
+                    </div>
+                    <div class="contact-item">
+                        <a href="http://wa.me/27670081526" target="_blank" rel="noopener noreferrer">
+                            <img src="images/whatsapp_icon.png" alt="whatsapp icon"> Chat with us
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/email_icon.png" alt="email icon"> info@rutefuels.co.za
+                    </div>
+                </div>
+            </div>
+            <div class="form-container">
+                <form id="Contact-form">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingName" required>
+                        <label for="floatingName">Name</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingEmail" required>
+                        <label for="floatingEmail">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" id="floatingTextarea" style="height: 200px" required></textarea>
+                        <label for="floatingTextarea">Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <button id="backToTop" style="display: none;"><span class="arrow">&#8593;</span></button>
+
+    <!-- footer section -->
+    <footer>
+        <p>&copy; 2024 rute fuels. All rights reserved</p>
+    </footer>
+
+</body>
+</html>
